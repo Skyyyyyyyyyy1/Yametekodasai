@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Love Story</title>
+   <style>
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         display: flex;
+         flex-direction: column; /* Aligning content to center */
+         align-items: center; /* Aligning content to center */
+         justify-content: center; /* Aligning content to center */
+         height: 100vh;
+         background-color: #f0f0f0;
+      }
+      .container {
+         text-align: left; /* Aligning content to left */
+         margin-bottom: 50px; /* Adding margin to space out from the bottom */
+      }
+      .box-container {
+         position: relative;
+         width: 280px; /* Increased box size */
+         height: 280px; /* Increased box size */
+         display: inline-block;
+         margin-right: 20px;
+      }
+      .closed {
+         background-color: #fff;
+         border: 2px solid #333;
+         border-radius: 10px;
+         position: relative;
+         overflow: hidden;
+      }
+      .lid {
+         width: 100%;
+         height: 40px;
+         background-color: #ccc;
+         position: absolute;
+         top: -40px;
+      }
+      .box-content {
+         padding: 20px;
+      }
+      img {
+         margin: 0 auto;
+         max-width: 100%; /* Ensure image fits within container */
+         max-height: 100%; /* Ensure image fits within container */
+      }
+      .gif {
+         display: none;
+         width: 150px;
+         height: auto;
+      }
+      .content {
+         display: none;
+      }
+      .arrow {
+         display: inline-block;
+         font-size: 24px;
+         margin-bottom: 20px;
+      }
+      .story {
+         width: 600px;
+         text-align: justify;
+         line-height: 1.5;
+         overflow: hidden;
+         background-color: #fff;
+         border: 2px solid #333;
+         border-radius: 10px;
+         padding: 20px;
+         display: none;
+      }
+      .press-button {
+         display: inline-block;
+         padding: 10px 20px;
+         background-color: #333;
+         color: #fff;
+         border: none;
+         border-radius: 5px;
+         cursor: pointer;
+      }
+   </style>
+</head>
+<body>
+   <div class="container">
+      <div class="box-container">
+         <div id="surpriseBox1" class="closed">
+            <div class="lid"></div>
+            <div class="box-content">
+               <img class="gif" src="Luna.gif" alt="Surprise GIF">
+               <p class="content">I love you through stars and endless skies.</p>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="box-container">
+         <div id="surpriseBox2" class="closed">
+            <div class="lid"></div>
+            <div class="box-content">
+               <img src="Jed_cutie.jpg" alt="Surprise Image">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="story">
+         <p>
+            In the heart of a bustling city where the lights never dimmed, there existed a love story as timeless as the celestial bodies themselves. Sol, a beacon of warmth and vitality, found his match in Luna, whose grace and radiance lit up the darkest of nights.
+         </p>
+         <p>
+            Sol, with a heart as bright as the sun, often found himself marveling at Luna's ethereal beauty. "Thank you for staying in my life for so long," he would whisper, his voice a gentle breeze on a summer's day. "To never leave despite the struggles and to love me for who I am."
+         </p>
+         <p>
+            Luna, with eyes that held the mystery of the night sky, would smile softly in response, her touch like moonbeams dancing on water. "You are my guiding light," she would murmur, her love enveloping him like a comforting embrace. "This journey with you has been more magical than I ever imagined."
+         </p>
+         <p>
+            As they stood together, immersed in the enchantment of their love, Sol felt his heart overflow with gratitude. "In your embrace, I find solace," he declared, his voice resonating with sincerity. "With you by my side, every moment feels like an eternal sunrise."
+         </p>
+         <p>
+            With those words, Sol and Luna shared a tender embrace, knowing that their love would continue to shine brightly, lighting up the sky with its brilliance.
+         </p>
+      </div>
+   </div>
+   <button class="press-button" onclick="revealStory()">Press Me</button> <!-- Press Me button added -->
+   <script>
+      function revealStory() {
+         var storyBox = document.querySelector(".story");
+         storyBox.style.display = "block";
+      }
+   </script>
+</body>
+</html>
